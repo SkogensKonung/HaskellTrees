@@ -1,0 +1,10 @@
+— Simple BT
+1. makeTree
+2. countNodes
+3. height
+4. balanced
+5. insertLeaf
+6. deleteLeaf
+7. insertLeaves
+8. deleteLeaves
+9. Pfadlaenge
