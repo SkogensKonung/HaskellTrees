@@ -11,7 +11,7 @@ countNodes (Node left right) = 1 + countNodes left + countNodes right
 
 height::Tree->Int
 height Leaf = 0
-height (Node left right) = 1+ (max (height left) (height right))
+height (Node left right) = 1 + (max (height left) (height right))
 
 -- verbesserung erfordert?
 bal::Tree->Bool
@@ -34,7 +34,13 @@ deleteLeaf (Node l r) =
 
 -- pfaflaenge
 -- Summe der Tiefen aller inneren Knoten
--- Die Tiefe (Level) eines Knotens - ist sein Abstand zur Wurzel. Die Tiefe der Wurzel ist gleich 0.
--- PL = p(l) + p(r) + countNodes - 1
+
+pfadlaenge::Tree->Int
+pfadlaenge Leaf = 0
+pfadlaenge (Node l r) = pfadlaenge l + pfadlaenge r + (countNodes (Node l r)) - 1
+
+
+
+
 
 
