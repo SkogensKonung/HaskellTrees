@@ -2,10 +2,26 @@
 1. makeTree - DONE
 2. countNodes - DONE
 3. height - DONE
-4. balanced - DONE
+4. balanced - DONE, changes made
 5. insertLeaf - DONE
 6. deleteLeaf - DONE
 7. insertLeaves
 8. deleteLeaves
 9. Pfadlaenge - DONE
-10. 
+10. joinTrees
+——
+BST
+1. insert
+2. findMin
+3. findMax
+4. mirror
+5. preorder
+6. inorder
+7. postorder
+8. levelorder
+9. twoChildren (each node, 2 children)
+10. full
+11. mapTree
+12. foldTree
+13. successor
+

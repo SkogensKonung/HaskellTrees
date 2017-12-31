@@ -16,7 +16,7 @@ height (Node left right) = 1 + (max (height left) (height right))
 -- verbesserung erfordert?
 bal::Tree->Bool
 bal Leaf = True
-bal (Node l r) = (height l == height r)
+bal (Node l r) = bal l && bal r && (height l == height r)
 
 insertLeaf::Tree->Tree
 insertLeaf Leaf = (Node Leaf Leaf)
